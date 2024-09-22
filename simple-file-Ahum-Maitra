@@ -1,0 +1,48 @@
+include <stdio.h>
+
+// Function Declarations (Prototypes)
+int add(int a, int b);      // Function with arguments and return value
+void greet();               // Function with no arguments and no return value
+int square(int n);          // Function with argument and return value
+void print_hello();         // Function with no return value
+
+int main() {
+    // Calling the greet function (no argument, no return)
+    greet();
+
+    // Calling the add function (with arguments, returns a value)
+    int sum = add(5, 3);
+    printf("Sum: %d\n", sum);
+
+    // Calling the square function (with argument, returns a value)
+    int num = 4;
+    int result = square(num);
+    printf("Square of %d: %d\n", num, result);
+
+    // Calling the print_hello function (no argument, no return)
+    print_hello();
+
+    return 0;
+}
+
+// Function Definitions
+
+// Function with arguments and return value
+int add(int a, int b) {
+    return a + b;
+}
+
+// Function with no arguments and no return value
+void greet() {
+    printf("Hello, welcome to the C programming functions demo!\n");
+}
+
+// Function with argument and return value
+int square(int n) {
+    return n * n;
+}
+
+// Function with no arguments and no return value
+void print_hello() {
+    printf("This is a simple function that prints Hello!\n");
+}
